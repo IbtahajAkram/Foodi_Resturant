@@ -10,8 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Cart from "./pages/Cart";
 import Signup from "./pages/Signup";
 import { useAuth0 } from "@auth0/auth0-react";
-import QProduct from "./data/Table/Table";
-import SingleProduct from "./data/Table/SingleProduct";
+
 
 const App = () => {
   const { isAuthenticated } = useAuth0();
@@ -32,8 +31,7 @@ const App = () => {
             ) : 
             <>
             <Route path={"/"} element={<Signup />} />
-            <Route path="/QProduct" element={<QProduct/>} />
-            <Route path="/QProduct/:id" element={<SingleProduct/>} />
+          
             </>
             
             }
